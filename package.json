@@ -11,6 +11,8 @@
   ],
   "license": "MIT",
   "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir lib/cjs",
     "build": "yarn build:esm && yarn build:cjs"
@@ -33,5 +35,10 @@
   "peerDependencies": {
     "react": "^16.8.0 || ^17.0.0",
     "react-dom": "^16.8.0 || ^17.0.0"
+  },
+  "dependencies": {
+    "@types/jest": "^27.0.2",
+    "jest": "^27.3.1",
+    "ts-jest": "^27.0.7"
   }
 }
