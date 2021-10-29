@@ -8,6 +8,8 @@
     "eslint:recommended",
     "airbnb",
     "plugin:@typescript-eslint/recommended",
+    "plugin:import/recommended",
+    "plugin:import/typescript",
     "plugin:prettier/recommended",
     "prettier"
   ],
@@ -33,10 +35,17 @@
     "prettier/prettier": "error",
     "no-use-before-define": "off",
     "import/prefer-default-export": "off",
-    "react/jsx-filename-extension": [1, {"extensions": [".tsx"]}],
+    "react/jsx-filename-extension": [1, {"extensions": [".tsx", ".ts"]}],
     "@typescript-eslint/no-use-before-define": ["error"],
     "@typescript-eslint/indent": ["error", 2],
     "@typescript-eslint/no-unused-vars": "error",
-    "@typescript-eslint/no-explicit-any": "error"
+    "@typescript-eslint/no-explicit-any": "error",
+    "import/extensions": ["error", "ignorePackages", {
+      "ts": "never",
+      "tsx": "never",
+      "js": "never",
+      "jsx": "never",
+      "mjs": "never"
+    }]
   }
 }

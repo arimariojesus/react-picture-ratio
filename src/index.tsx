@@ -1,7 +1,3 @@
-import React from 'react';
+import SayHello from './components/SayHello';
 
-const SayHello = ({ name }: { name: string }): JSX.Element => (
-  <div>Hey {name}, nice to meet you.</div>
-);
-
-export default SayHello;
+export { SayHello };
