@@ -1,9 +1,8 @@
 {
   "name": "react-picture-ratio",
   "version": "0.1.0",
-  "description": "A aspect ratio component for react",
-  "main": "lib/cjs/index.js",
-  "module": "lib/esm/index.js",
+  "description": "An aspect ratio component for react",
+  "main": "lib/index.js",
   "types": "lib/esm/index.d.ts",
   "homepage": "https://github.com/arimariojesus/react-picture-ratio#readme",
   "files": [
@@ -13,9 +12,7 @@
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
-    "build:esm": "tsc",
-    "build:cjs": "tsc --module commonjs --outDir lib/cjs",
-    "build": "yarn build:esm && yarn build:cjs",
+    "build": "webpack",
     "lint": "eslint ./src --ext ts,tsx",
     "lint:fix": "yarn lint --fix",
     "prettier": "prettier ./src/{*.{ts,tsx},**/*.{ts,tsx}}"
@@ -44,6 +41,7 @@
     "@types/react-dom": "^17.0.10",
     "@typescript-eslint/eslint-plugin": "^5.2.0",
     "@typescript-eslint/parser": "^5.2.0",
+    "css-loader": "^6.5.0",
     "eslint": "^8.1.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^8.3.0",
@@ -57,7 +55,9 @@
     "lint-staged": "^11.2.4",
     "prettier": "^2.4.1",
     "react": "^17.0.2",
+    "style-loader": "^3.3.1",
     "ts-jest": "^27.0.7",
+    "ts-loader": "^9.2.6",
     "typescript": "^4.4.4"
   },
   "peerDependencies": {
