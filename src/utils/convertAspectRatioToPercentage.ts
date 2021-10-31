@@ -1,4 +1,4 @@
-const ASPECT_RATIO_DEFAULT = '56.25%';
+export const DEFAULT_RATIO_VALUE = '56.25%';
 
 export const convertAspectRatioToPercentage = (ratio: string) => {
   const separator = ratio.indexOf(':') !== -1 ? ':' : '/';
@@ -11,5 +11,5 @@ export const convertAspectRatioToPercentage = (ratio: string) => {
     return percentage;
   }
 
-  return ASPECT_RATIO_DEFAULT;
+  return DEFAULT_RATIO_VALUE;
 };

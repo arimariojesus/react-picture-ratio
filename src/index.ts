@@ -1,3 +1,3 @@
-import SayHello from './components/SayHello';
+import Picture from './components/Picture';
 
-export { SayHello };
+export { Picture };

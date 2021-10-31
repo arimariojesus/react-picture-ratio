@@ -34,11 +34,13 @@
   "rules": {
     "prettier/prettier": "error",
     "no-use-before-define": "off",
+    "no-unused-vars": "warn",
     "import/prefer-default-export": "off",
+    "react/require-default-props": "off",
     "react/jsx-filename-extension": [1, {"extensions": [".tsx", ".ts"]}],
     "@typescript-eslint/no-use-before-define": ["error"],
     "@typescript-eslint/indent": ["error", 2],
-    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/no-unused-vars": ["warn"],
     "@typescript-eslint/no-explicit-any": "error",
     "import/extensions": ["error", "ignorePackages", {
       "ts": "never",
