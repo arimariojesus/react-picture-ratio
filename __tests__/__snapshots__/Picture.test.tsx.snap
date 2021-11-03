@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Picture /> should match snapshot 1`] = `
+<picture
+  style={
+    Object {
+      "paddingTop": "75.00%",
+    }
+  }
+>
+  <img
+    alt="Placeholder"
+    data-grow={false}
+    loading="lazy"
+    src="https://via.placeholder.com/768x432"
+  />
+</picture>
+`;
