@@ -23,6 +23,8 @@
   },
   "plugins": [
     "react",
+    "testing-library",
+    "jest-dom",
     "@typescript-eslint",
     "prettier"
   ],
