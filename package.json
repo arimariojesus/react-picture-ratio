@@ -1,6 +1,6 @@
 {
   "name": "react-picture-ratio",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An aspect ratio component for react",
   "main": "lib/index.js",
   "types": "lib/esm/index.d.ts",
@@ -12,6 +12,7 @@
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
+    "test:upt": "jest -u",
     "build": "webpack",
     "lint": "eslint ./src --ext ts,tsx",
     "lint:fix": "yarn lint --fix",
