@@ -25,7 +25,8 @@
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "yarn lint:fix"
+      "yarn lint:fix",
+      "yarn test"
     ]
   },
   "repository": {
