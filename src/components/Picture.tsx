@@ -17,6 +17,7 @@ function Picture({
 }: PictureProps): JSX.Element {
   return (
     <picture
+      data-testid="react-picture-ratio"
       className={styles.ratioBox}
       style={{ paddingTop: convertRatio(aspectRatio) }}
     >

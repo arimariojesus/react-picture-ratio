@@ -1,5 +1,6 @@
 {
   "env": {
+    "jest": true,
     "browser": true,
     "es2021": true
   },
@@ -44,6 +45,7 @@
     "@typescript-eslint/indent": ["error", 2],
     "@typescript-eslint/no-unused-vars": ["warn"],
     "@typescript-eslint/no-explicit-any": "error",
+    "@typescript-eslint/no-var-requires": "off",
     "import/extensions": ["error", "ignorePackages", {
       "ts": "never",
       "tsx": "never",

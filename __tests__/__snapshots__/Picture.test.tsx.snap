@@ -2,6 +2,7 @@
 
 exports[`<Picture /> should match snapshot 1`] = `
 <picture
+  data-testid="react-picture-ratio"
   style={
     Object {
       "paddingTop": "75.00%",
