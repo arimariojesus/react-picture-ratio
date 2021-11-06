@@ -1,4 +1,4 @@
-import React, { ImgHTMLAttributes } from 'react';
+import React, { CSSProperties, ImgHTMLAttributes } from 'react';
 import styles from './Picture.module.css';
 
 import { convertAspectRatioToPercentage as convertRatio } from '../utils/convertAspectRatioToPercentage';
@@ -15,11 +15,13 @@ function Picture({
   growOnHover = false,
   ...props
 }: PictureProps): JSX.Element {
+  const boxStyles = { '--ratio': convertRatio(aspectRatio) } as CSSProperties;
+
   return (
     <picture
       data-testid="react-picture-ratio"
       className={styles.ratioBox}
-      style={{ paddingTop: convertRatio(aspectRatio) }}
+      style={boxStyles}
     >
       <img
         src={props.src}
