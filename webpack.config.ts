@@ -18,13 +18,16 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
+        loader: 'style-loader!css-loader?modules=true',
         exclude: /node_modules/,
       },
     ],
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
+  },
+  moduleNameMapper: {
+    '\\.css$': 'identity-obj-proxy',
   },
   externals: {
     react: {

@@ -2,15 +2,17 @@
 
 exports[`<Picture /> should match snapshot 1`] = `
 <picture
+  className="ratioBox"
   data-testid="react-picture-ratio"
   style={
     Object {
-      "paddingTop": "75.00%",
+      "--ratio": "75.00%",
     }
   }
 >
   <img
     alt="Placeholder"
+    className="image"
     data-grow={false}
     loading="lazy"
     src="https://via.placeholder.com/768x432"

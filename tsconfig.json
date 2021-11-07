@@ -22,6 +22,6 @@
     "allowSyntheticDefaultImports": true,
     "importHelpers": true
   },
-  "include": ["src"],
+  "include": ["src", "jest.setup.ts"],
   "exclude": ["node_modules", "lib", "**/*.test.ts"]
 }

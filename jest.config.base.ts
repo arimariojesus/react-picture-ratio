@@ -6,8 +6,9 @@ export const baseJestConfig = {
   coverageDirectory: 'coverage',
   preset: 'ts-jest',
   moduleNameMapper: {
+    '\\.module\\.css$': 'identity-obj-proxy',
     '\\.(css|less|sass|scss)$': '<rootDir>/__mocks__/styleMock.js',
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
-  setupFilesAfterEnv: ['./jest.setup.ts'],
+  setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
 };

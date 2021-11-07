@@ -1,7 +1,7 @@
+import React from 'react';
 import { render, screen } from '@testing-library/react';
 import renderer from 'react-test-renderer';
 
-import React from 'react';
 import Picture from '../src/components/Picture';
 
 describe('<Picture />', () => {
