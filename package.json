@@ -1,6 +1,6 @@
 {
   "name": "react-picture-ratio",
-  "version": "0.2.0",
+  "version": "0.4.0",
   "description": "An aspect ratio component for react",
   "main": "lib/index.js",
   "types": "lib/esm/index.d.ts",

@@ -35,4 +35,13 @@ describe('<Picture />', () => {
     expect(picture).toHaveClass('ratioBox');
     expect(image).toHaveClass('image');
   });
+
+  it('should have shimmer animation', () => {
+    render(
+      <Picture src="https://via.placeholder.com/768x432" alt="Placeholder" />,
+    );
+    const picture = screen.getByTestId('react-picture-ratio');
+
+    expect(picture).toHaveClass('shimmerEffect');
+  });
 });

@@ -1,8 +1,13 @@
+:root {
+  --rpt-bg-width: 1200px;
+  --rpt-bg-color: #d9d9d9;
+}
+
 .ratioBox {
   display: block;
   position: relative;
   overflow: hidden;
-  background-color: #ddd;
+  background-color: var(--rpt-bg-color);
 }
 
 .ratioBox::before {
@@ -13,6 +18,39 @@
   height: 0;
 
   padding-top: var(--ratio);
+}
+
+@keyframes shimmer {
+  0% {
+    background-image: linear-gradient(
+      to right,
+      var(--rpt-bg-color) 0%,
+      rgba(0, 0, 0, 0.05) 20%,
+      var(--rpt-bg-color) 40%,
+      var(--rpt-bg-color) 100%
+    );
+    background-size: var(--rpt-bg-width) 100%;
+    background-position: calc(var(--rpt-bg-width) - (var(--rpt-bg-width) * 2)) 0;
+  }
+  100% {
+    background-image: linear-gradient(
+      to right,
+      var(--rpt-bg-color) 0%,
+      rgba(0, 0, 0, 0.05) 20%,
+      var(--rpt-bg-color) 40%,
+      var(--rpt-bg-color) 100%
+    );
+    background-size: var(--rpt-bg-width) 100%;
+    background-position: var(--rpt-bg-width) 0;
+  }
+}
+
+.shimmerEffect::before {
+  animation-name: shimmer;
+  animation-duration: 2.2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
 }
 
 .image {

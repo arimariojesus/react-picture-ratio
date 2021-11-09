@@ -1,7 +1,8 @@
-import React, { CSSProperties, ImgHTMLAttributes } from 'react';
+import React, { CSSProperties, ImgHTMLAttributes, useRef } from 'react';
 import styles from './Picture.module.css';
 
 import { convertAspectRatioToPercentage as convertRatio } from '../utils/convertAspectRatioToPercentage';
+import { handleRemoveClassName } from '../utils/handleRemoveClassName';
 
 interface PictureProps extends ImgHTMLAttributes<HTMLImageElement> {
   aspectRatio?: string;
@@ -16,11 +17,13 @@ function Picture({
   ...props
 }: PictureProps): JSX.Element {
   const boxStyles = { '--ratio': convertRatio(aspectRatio) } as CSSProperties;
+  const pictureRef = useRef<HTMLElement>(null);
 
   return (
     <picture
+      ref={pictureRef}
       data-testid="react-picture-ratio"
-      className={styles.ratioBox}
+      className={`${styles.ratioBox} ${styles.shimmerEffect}`}
       style={boxStyles}
     >
       <img
@@ -29,6 +32,12 @@ function Picture({
         loading="lazy"
         data-grow={growOnHover}
         className={styles.image}
+        onLoad={() =>
+          handleRemoveClassName(pictureRef.current, styles.shimmerEffect)
+        }
+        onError={() =>
+          handleRemoveClassName(pictureRef.current, styles.shimmerEffect)
+        }
       />
     </picture>
   );
