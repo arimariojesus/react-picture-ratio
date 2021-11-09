@@ -1,12 +1,21 @@
 {
   "name": "react-picture-ratio",
-  "version": "0.5.0",
-  "description": "An aspect ratio component for react",
+  "version": "0.6.0",
+  "description": "A simple aspect ratio component for react",
   "main": "lib/index.js",
   "types": "lib/esm/index.d.ts",
   "homepage": "https://github.com/arimariojesus/react-picture-ratio#readme",
   "files": [
     "lib/"
+  ],
+  "keywords": [
+    "react",
+    "picture",
+    "img",
+    "image",
+    "cls",
+    "aspect-ratio",
+    "aspect ratio"
   ],
   "license": "MIT",
   "scripts": {

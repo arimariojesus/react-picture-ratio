@@ -59,7 +59,7 @@ npm i react-picture-ratio
 
 ### 2ª Contribua para `react-picture-ratio`
 
-1. Make the fork of the project
+1. Faça o fork do projeto
 > https://github.com/arimariojesus/react-picture-ratio/fork
 
 ```bash
