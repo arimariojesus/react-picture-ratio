@@ -52,6 +52,7 @@ O [Aspect Ratio](https://css-tricks.com/aspect-ratio-boxes/) nada mais é do que
 | className	| string |	false | - | Nome personalizado do atributo `class` para o wrap do componente |
 | src	| string |	true | - | URL de uma imagem |
 | alt	| string |	true | - | Texto alternativo para a imagem caso ela não seja carregada |
+> `<Picture />` herda todas as propriedades de [ImgHTMLAttributes](https://use-form.netlify.app/interfaces/_node_modules__types_react_index_d_.react.imghtmlattributes.html)
 
 ## Exemplo de uso
 
@@ -62,13 +63,15 @@ import { Picture } from 'react-picture-ratio';
 function App() {
   return (
     <div className="App">
-      <Picture aspectRatio="450:300" src="https://via.placeholder.com/450x300" alt="Imagem com largura de 450px e altura de 300px" />
+      <Picture
+        aspectRatio="450:300" // ou "450/300"
+        src="https://via.placeholder.com/450x300"
+        alt="Imagem com largura de 450px e altura de 300px"
+      />
     </div>
   );
 }
 ```
-
-<img src="https://user-images.githubusercontent.com/64603070/141026855-62d97789-5a13-491c-9774-5197ab622eb2.gif" alt="Exemplo de carregamento do component Picture" width="700" />
 
 ## ☑ Instalação
 

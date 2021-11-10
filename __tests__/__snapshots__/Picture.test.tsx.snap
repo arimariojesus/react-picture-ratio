@@ -2,7 +2,7 @@
 
 exports[`<Picture /> should match snapshot 1`] = `
 <picture
-  className="ratioBox shimmerEffect"
+  className=" ratioBox shimmerEffect"
   data-testid="react-picture-ratio"
   style={
     Object {
@@ -13,7 +13,6 @@ exports[`<Picture /> should match snapshot 1`] = `
   <img
     alt="Placeholder"
     className="image"
-    data-grow={false}
     loading="lazy"
     onError={[Function]}
     onLoad={[Function]}

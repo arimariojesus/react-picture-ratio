@@ -6,14 +6,12 @@ import { handleRemoveClassName } from '../utils/handleRemoveClassName';
 
 interface PictureProps extends ImgHTMLAttributes<HTMLImageElement> {
   aspectRatio?: string;
-  growOnHover?: boolean;
 }
 
 const RATIO_DEFAULT = '4:3';
 
 function Picture({
   aspectRatio = RATIO_DEFAULT,
-  growOnHover = false,
   ...props
 }: PictureProps): JSX.Element {
   const boxStyles = { '--ratio': convertRatio(aspectRatio) } as CSSProperties;
@@ -23,14 +21,15 @@ function Picture({
     <picture
       ref={pictureRef}
       data-testid="react-picture-ratio"
-      className={`${styles.ratioBox} ${styles.shimmerEffect}`}
+      className={`${props.className ? props.className : ''} ${
+        styles.ratioBox
+      } ${styles.shimmerEffect}`}
       style={boxStyles}
     >
       <img
         src={props.src}
         alt={props.alt}
         loading="lazy"
-        data-grow={growOnHover}
         className={styles.image}
         onLoad={() =>
           handleRemoveClassName(pictureRef.current, styles.shimmerEffect)
