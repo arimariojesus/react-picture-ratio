@@ -42,6 +42,34 @@ O [Aspect Ratio](https://css-tricks.com/aspect-ratio-boxes/) nada mais é do que
   </figcaption>
 </figure>
 
+## Componente
+
+* `<Picture />`: utilize o componente Picture como se fosse uma tag image.
+
+| props | type | required | default | description |
+| --- | --- | --- | --- | --- |
+| aspectRatio | string | false | 4:3 | proporção `largura x altura` que deseja que sua imagem tenha  |
+| className	| string |	false | - | Nome personalizado do atributo `class` para o wrap do componente |
+| src	| string |	true | - | URL de uma imagem |
+| alt	| string |	true | - | Texto alternativo para a imagem caso ela não seja carregada |
+
+## Exemplo de uso
+
+```typescript
+import React from 'react';
+import { Picture } from 'react-picture-ratio';
+
+function App() {
+  return (
+    <div className="App">
+      <Picture aspectRatio="450:300" src="https://via.placeholder.com/450x300" alt="Imagem com largura de 450px e altura de 300px" />
+    </div>
+  );
+}
+```
+
+<img src="https://user-images.githubusercontent.com/64603070/141026855-62d97789-5a13-491c-9774-5197ab622eb2.gif" alt="Exemplo de carregamento do component Picture" width="700" />
+
 ## ☑ Instalação
 
 Duas formas:
