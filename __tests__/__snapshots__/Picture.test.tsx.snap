@@ -3,7 +3,6 @@
 exports[`<Picture /> should match snapshot 1`] = `
 <picture
   className=" ratioBox shimmerEffect"
-  data-testid="react-picture-ratio"
   style={
     Object {
       "--ratio": "75.00%",

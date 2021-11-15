@@ -18,10 +18,10 @@ describe('<Picture />', () => {
       <Picture src="https://via.placeholder.com/768x432" alt="Placeholder" />,
     );
 
-    const pictureElement = screen.getByTestId('react-picture-ratio');
+    const pictureElement = screen.getByAltText(/Placeholder/i).parentElement;
     expect(pictureElement).toBeInTheDocument();
 
-    const imgElement = screen.getByAltText('Placeholder');
+    const imgElement = screen.getByAltText(/Placeholder/i);
     expect(imgElement).toBeInTheDocument();
   });
 
@@ -29,19 +29,19 @@ describe('<Picture />', () => {
     render(
       <Picture src="https://via.placeholder.com/768x432" alt="Placeholder" />,
     );
-    const picture = screen.getByTestId('react-picture-ratio');
-    const image = picture.firstChild;
+    const pictureElement = screen.getByAltText(/Placeholder/i).parentElement;
+    const imgElement = screen.getByAltText(/Placeholder/i);
 
-    expect(picture).toHaveClass('ratioBox');
-    expect(image).toHaveClass('image');
+    expect(pictureElement).toHaveClass('ratioBox');
+    expect(imgElement).toHaveClass('image');
   });
 
   it('should have shimmer animation', () => {
     render(
       <Picture src="https://via.placeholder.com/768x432" alt="Placeholder" />,
     );
-    const picture = screen.getByTestId('react-picture-ratio');
+    const pictureElement = screen.getByAltText(/Placeholder/i).parentElement;
 
-    expect(picture).toHaveClass('shimmerEffect');
+    expect(pictureElement).toHaveClass('shimmerEffect');
   });
 });

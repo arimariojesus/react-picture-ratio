@@ -20,7 +20,6 @@ function Picture({
   return (
     <picture
       ref={pictureRef}
-      data-testid="react-picture-ratio"
       className={`${props.className ? props.className : ''} ${
         styles.ratioBox
       } ${styles.shimmerEffect}`}
