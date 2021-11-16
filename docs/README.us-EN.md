@@ -21,7 +21,7 @@
 <pre>npm i <a href="https://www.npmjs.com/package/react-picture-ratio">react-picture-ratio</a></pre>
 <br />
 
-[🇧🇷 Português do Brasil](https://github.com/beautifulinteractions/beautiful-react-hooks) | 🇺🇸 English
+[🇧🇷 Português do Brasil](https://github.com/arimariojesus/react-picture-ratio) | 🇺🇸 English
 
 </div>
 

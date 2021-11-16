@@ -14,14 +14,14 @@
 <!-- Badges -->
 
 [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/arimariojesus/react-picture-ratio)
-[![License](https://badgen.net/badge/License/MIT/blue)](https://github.com/arimariojesus/react-picture-ratio/blob/master/LICENSE)
+[![License](https://badgen.net/badge/License/MIT/blue)](https://github.com/arimariojesus/react-picture-ratio/blob/main/LICENSE)
 ![npm](https://img.shields.io/npm/v/react-picture-ratio)
 
 <br />
 <pre>npm i <a href="https://www.npmjs.com/package/react-picture-ratio">react-picture-ratio</a></pre>
 <br />
 
-🇧🇷 Português do Brasil | [🇺🇸 English](https://github.com/beautifulinteractions/beautiful-react-hooks/blob/master/docs/README.us-EN.md)
+🇧🇷 Português do Brasil | [🇺🇸 English](https://github.com/arimariojesus/react-picture-ratio/blob/main/docs/README.us-EN.md)
 
 </div>
 
