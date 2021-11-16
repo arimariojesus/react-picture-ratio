@@ -21,6 +21,8 @@
 <pre>npm i <a href="https://www.npmjs.com/package/react-picture-ratio">react-picture-ratio</a></pre>
 <br />
 
+🇧🇷 Português do Brasil | [🇺🇸 English](https://github.com/beautifulinteractions/beautiful-react-hooks/blob/master/docs/README.us-EN.md)
+
 </div>
 
 ## 💡 Por quê?
@@ -29,7 +31,7 @@ Este componente foi construído com o intuito de resolver dois principais proble
 
 #### CLS (Cumulative Layout Shift)
 
-Você já deve ter tido a experiência de acessar um site, ele não esta totalmente carregado, você dá um pequeno srcoll no conteúdo quando de repente... "pula" uma imagem na tela e empurra o conteúdo que você estava visualizando ou estava prestes a clicar. Pois bem, este tipo de comportamento é medido pelo [Core Web Vitals](https://web.dev/vitals) com a métrica de [Cumulative Layout Shift](https://web.dev/i18n/pt/cls/).
+Você já deve ter tido a experiência de estar acessando um site, ele não esta totalmente carregado, você dá um pequeno scroll no conteúdo quando de repente... "pula" uma imagem na tela e empurra o conteúdo que você estava visualizando ou estava prestes a clicar. Pois bem, este tipo de comportamento é medido pelo [Core Web Vitals](https://web.dev/vitals) com a métrica de [Cumulative Layout Shift](https://web.dev/i18n/pt/cls/).
 
 #### Aspect Ratio
 
@@ -111,7 +113,7 @@ yarn test
 
 Este projeto está sob a licença [MIT](https://github.com/arimariojesus/react-picture-ratio/blob/master/LICENSE).
 
-## Author
+## Autor
 
 <table>
   <tr>
