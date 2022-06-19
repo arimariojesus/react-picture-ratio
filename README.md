@@ -37,12 +37,8 @@ Você já deve ter tido a experiência de estar acessando um site, ele não esta
 
 O [Aspect Ratio](https://css-tricks.com/aspect-ratio-boxes/) nada mais é do que a proporção de determinado conteúdo relacionando sua dimões de largura e altura (a imagem abaixo ilustra bem isto). O nosso componente `react-picture-ratio` manterá a proporção que for passada mas adptando-se ao layout.
 
-<figure>
-  <img src="https://clipchamp.com/static/d7fbfcc0e5bccea2e2bb4e124d59647d/84aa4/image7.webp" alt="Comparação de diferentes proporções (aspect ratio) em dispositivos móveis." />
-  <figcaption>
-    <small>Comparação de diferentes proporções (aspect ratio) em dispositivos móveis.<br />Fonte: https://clipchamp.com/en/blog/what-aspect-ratio/</small>
-  </figcaption>
-</figure>
+![Comparação de diferentes proporções (aspect ratio) em dispositivos móveis.](https://user-images.githubusercontent.com/64603070/174462760-f9b5c125-43cd-4d7d-8820-b2d42399a8fe.png)
+<small>Comparação de diferentes proporções (aspect ratio) em dispositivos móveis.<br />Fonte: https://clipchamp.com/en/blog/what-aspect-ratio/</small>
 
 ## Componente
 
@@ -111,19 +107,4 @@ yarn test
 ```
 ## 📝 Licença
 
-Este projeto está sob a licença [MIT](https://github.com/arimariojesus/react-picture-ratio/blob/master/LICENSE).
-
-## Autor
-
-<table>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/arimariojesus" target="_blank">
-        <img src="https://avatars3.githubusercontent.com/u/64603070" width="100px;" alt="Foto de Ari Jesus no GitHub"/><br>
-        <sub>
-          <b>Ari Jesus</b>
-        </sub>
-      </a>
-    </td>
-  </tr>
-</table>
+MIT © [Arimário Jesus](https://github.com/arimariojesus)
